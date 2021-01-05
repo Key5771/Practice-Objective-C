@@ -89,28 +89,111 @@ void drawShape(Shape shapes[], int count) {
 - (void) setBounds: (ShapeRect) bounds;
 - (void) draw;
 
+@end // Circle
+
+// 클래스의 내용을 위한 코드를 작성하려고 한다는 것을 컴파일러에게 알려주는 지시자
+@implementation Circle
+
+- (void) setFillColor: (ShapeColor) c {
+    fillColor = c;
+} // setFillColor
+
+- (void) setBounds: (ShapeRect) b {
+    bounds = b;
+} // setBounds
+
+- (void) draw {
+    NSLog(@"drawing a circle at (%d, %d, %d, %d) in %@",
+          bounds.x, bounds.y, bounds.width, bounds.height, colorName(fillColor));
+} // draw
+
+@end // Circle
+
+@interface Rectangle : NSObject {
+    ShapeColor fillColor;
+    ShapeRect bounds;
+}
+
+- (void) setFillColor: (ShapeColor) fillColor;
+- (void) setBounds: (ShapeRect) bounds;
+- (void) draw;
+
+@end // Rectangle
+
+@implementation Rectangle
+
+- (void) setFillColor:(ShapeColor) c {
+    fillColor = c;
+} // setFillColor
+
+- (void) setBounds:(ShapeRect) b {
+    bounds = b;
+}
+
+- (void) draw {
+    NSLog(@"drawing a rectangle at (%d, %d, %d, %d) in %@",
+          bounds.x, bounds.y, bounds.width, bounds.height, colorName(fillColor));
+}
+
 @end
+
+@interface Triangle : NSObject {
+    ShapeColor fillColor;
+    ShapeRect bounds;
+}
+
+- (void) setFillColor: (ShapeColor) fillColor;
+- (void) setBounds: (ShapeRect) bounds;
+- (void) draw;
+
+@end
+
+@implementation Triangle
+
+- (void) setFillColor:(ShapeColor) c {
+    fillColor = c;
+}
+
+- (void) setBounds:(ShapeRect) b {
+    bounds = b;
+}
+
+- (void) draw {
+    NSLog(@"drawing a triangle at (%d, %d, %d, %d) in %@",
+          bounds.x, bounds.y, bounds.width, bounds.height, colorName(fillColor));
+}
+
+@end
+
+void drawShapes(__strong id shapes[], int count) {
+    int i;
+    
+    for (i = 0; i < count; i++) {
+        id shape = shapes[i];
+        [shape draw];
+    }
+}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Shape shapes[3];
+        id shapes[3];
         
         ShapeRect rect0 = {0, 0, 10, 30};
-        shapes[0].type = kCircle;
-        shapes[0].fillColor = kRedColor;
-        shapes[0].bounds = rect0;
+        shapes[0] = [Circle new];
+        [shapes[0] setBounds: rect0];
+        [shapes[0] setFillColor: kRedColor];
         
         ShapeRect rect1 = {30, 40, 50, 60};
-        shapes[1].type = kRectangle;
-        shapes[1].fillColor = kGreenColor;
-        shapes[1].bounds = rect1;
+        shapes[1] = [Rectangle new];
+        [shapes[1] setBounds: rect1];
+        [shapes[1] setFillColor: kBlueColor];
         
-        ShapeRect rect2 = {15, 18, 37, 29};
-        shapes[2].type = kOblateSpheroid;
-        shapes[2].fillColor = kBlueColor;
-        shapes[2].bounds = rect2;
+        ShapeRect rect2 = {15, 19, 37, 29};
+        shapes[2] = [Triangle new];
+        [shapes[2] setBounds: rect2];
+        [shapes[2] setFillColor: kGreenColor];
         
-        drawShape(shapes, 3);
+        drawShapes(shapes, 3);
     }
     
     return 0;
