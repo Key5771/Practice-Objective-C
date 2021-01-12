@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
+// MARK: - Tire
 @interface Tire : NSObject
 @end // Tire
 
@@ -18,6 +19,18 @@
 
 @end // Tire
 
+@interface AllWeatherRadial : Tire
+@end // AllWeatherRadial
+
+@implementation AllWeatherRadial
+
+- (NSString *) description {
+    return (@"I am a tire for rain or shine.");
+}
+
+@end // AllWeatherRadial
+
+// MARK: - Engine
 @interface Engine : NSObject
 @end // Engine
 
@@ -29,6 +42,17 @@
 
 @end // Engine
 
+@interface Slant6 : Engine
+@end // Slant6
+
+@implementation Slant6
+
+- (NSString *) description {
+    return (@"I am a slant-6. VROOOM!");
+}
+
+@end // Slant6
+// MARK: - Car
 @interface Car : NSObject {
     Engine *engine;
     Tire *tires[4];
@@ -100,16 +124,17 @@
 @end // Car
 
 
+// MARK: - main
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Car *car = [Car new];
         
-        Engine *engine = [Engine new];
+        Engine *engine = [Slant6 new];
         [car setEngine: engine];
         
         int i;
         for (i = 0; i < 4; i++) {
-            Tire *tire = [Tire new];
+            Tire *tire = [AllWeatherRadial new];
             
             [car setTire: tire atIndex: i];
         }
