@@ -10,6 +10,7 @@
 		EAF13AE425AD90C300636846 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13AE325AD90C300636846 /* main.m */; };
 		EAF13AF125AEC17200636846 /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13AF025AEC17200636846 /* Tire.m */; };
 		EAF13AF825AEC20100636846 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13AF725AEC20100636846 /* Engine.m */; };
+		EAF13AFF25AEC51A00636846 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13AFE25AEC51A00636846 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		EAF13AF025AEC17200636846 /* Tire.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
 		EAF13AF625AEC1DA00636846 /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
 		EAF13AF725AEC20100636846 /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
+		EAF13AFC25AEC44300636846 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		EAF13AFE25AEC51A00636846 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		EAF13AE225AD90C300636846 /* Composition */ = {
 			isa = PBXGroup;
 			children = (
+				EAF13AFB25AEC43900636846 /* Car */,
 				EAF13AF525AEC1D000636846 /* Engine */,
 				EAF13AF425AEC1C800636846 /* Tire */,
 				EAF13AE325AD90C300636846 /* main.m */,
@@ -86,6 +90,15 @@
 				EAF13AF725AEC20100636846 /* Engine.m */,
 			);
 			path = Engine;
+			sourceTree = "<group>";
+		};
+		EAF13AFB25AEC43900636846 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				EAF13AFC25AEC44300636846 /* Car.h */,
+				EAF13AFE25AEC51A00636846 /* Car.m */,
+			);
+			path = Car;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +159,7 @@
 			files = (
 				EAF13AE425AD90C300636846 /* main.m in Sources */,
 				EAF13AF125AEC17200636846 /* Tire.m in Sources */,
+				EAF13AFF25AEC51A00636846 /* Car.m in Sources */,
 				EAF13AF825AEC20100636846 /* Engine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
