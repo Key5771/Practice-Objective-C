@@ -11,6 +11,8 @@
 		EAF13AF125AEC17200636846 /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13AF025AEC17200636846 /* Tire.m */; };
 		EAF13AF825AEC20100636846 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13AF725AEC20100636846 /* Engine.m */; };
 		EAF13AFF25AEC51A00636846 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13AFE25AEC51A00636846 /* Car.m */; };
+		EAF13B0325AEC72100636846 /* Slant6.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13B0225AEC72100636846 /* Slant6.m */; };
+		EAF13B0725AEC82900636846 /* AllWeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13B0625AEC82900636846 /* AllWeatherRadial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,10 @@
 		EAF13AF725AEC20100636846 /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
 		EAF13AFC25AEC44300636846 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		EAF13AFE25AEC51A00636846 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		EAF13B0125AEC6F700636846 /* Slant6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Slant6.h; sourceTree = "<group>"; };
+		EAF13B0225AEC72100636846 /* Slant6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slant6.m; sourceTree = "<group>"; };
+		EAF13B0525AEC77100636846 /* AllWeatherRadial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllWeatherRadial.h; sourceTree = "<group>"; };
+		EAF13B0625AEC82900636846 /* AllWeatherRadial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllWeatherRadial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 			children = (
 				EAF13AEF25AEBFC900636846 /* Tire.h */,
 				EAF13AF025AEC17200636846 /* Tire.m */,
+				EAF13B0525AEC77100636846 /* AllWeatherRadial.h */,
+				EAF13B0625AEC82900636846 /* AllWeatherRadial.m */,
 			);
 			path = Tire;
 			sourceTree = "<group>";
@@ -88,6 +96,8 @@
 			children = (
 				EAF13AF625AEC1DA00636846 /* Engine.h */,
 				EAF13AF725AEC20100636846 /* Engine.m */,
+				EAF13B0125AEC6F700636846 /* Slant6.h */,
+				EAF13B0225AEC72100636846 /* Slant6.m */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -161,6 +171,8 @@
 				EAF13AF125AEC17200636846 /* Tire.m in Sources */,
 				EAF13AFF25AEC51A00636846 /* Car.m in Sources */,
 				EAF13AF825AEC20100636846 /* Engine.m in Sources */,
+				EAF13B0325AEC72100636846 /* Slant6.m in Sources */,
+				EAF13B0725AEC82900636846 /* AllWeatherRadial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

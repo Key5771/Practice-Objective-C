@@ -9,30 +9,8 @@
 #import "Tire.h"
 #import "Engine.h"
 #import "Car.h"
-
-// MARK: - Tire
-@interface AllWeatherRadial : Tire
-@end // AllWeatherRadial
-
-@implementation AllWeatherRadial
-
-- (NSString *) description {
-    return (@"I am a tire for rain or shine.");
-}
-
-@end // AllWeatherRadial
-
-// MARK: - Engine
-@interface Slant6 : Engine
-@end // Slant6
-
-@implementation Slant6
-
-- (NSString *) description {
-    return (@"I am a slant-6. VROOOM!");
-}
-
-@end // Slant6
+#import "Slant6.h"
+#import "AllWeatherRadial.h"
 
 // MARK: - main
 int main(int argc, const char * argv[]) {
