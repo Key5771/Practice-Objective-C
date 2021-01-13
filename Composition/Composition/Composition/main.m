@@ -6,19 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Tire.h"
+#import "Engine.h"
 
 // MARK: - Tire
-@interface Tire : NSObject
-@end // Tire
-
-@implementation Tire
-
-- (NSString *) description {
-    return (@"I am a tire. I last a while");
-}
-
-@end // Tire
-
 @interface AllWeatherRadial : Tire
 @end // AllWeatherRadial
 
@@ -31,17 +22,6 @@
 @end // AllWeatherRadial
 
 // MARK: - Engine
-@interface Engine : NSObject
-@end // Engine
-
-@implementation Engine
-
-- (NSString *) description {
-    return (@"I am an engine. Vroom!");
-}
-
-@end // Engine
-
 @interface Slant6 : Engine
 @end // Slant6
 

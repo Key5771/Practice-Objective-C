@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EAF13AE425AD90C300636846 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13AE325AD90C300636846 /* main.m */; };
+		EAF13AF125AEC17200636846 /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13AF025AEC17200636846 /* Tire.m */; };
+		EAF13AF825AEC20100636846 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF13AF725AEC20100636846 /* Engine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		EAF13AE025AD90C300636846 /* Composition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Composition; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF13AE325AD90C300636846 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAF13AEF25AEBFC900636846 /* Tire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tire.h; sourceTree = "<group>"; };
+		EAF13AF025AEC17200636846 /* Tire.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
+		EAF13AF625AEC1DA00636846 /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		EAF13AF725AEC20100636846 /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,29 @@
 		EAF13AE225AD90C300636846 /* Composition */ = {
 			isa = PBXGroup;
 			children = (
+				EAF13AF525AEC1D000636846 /* Engine */,
+				EAF13AF425AEC1C800636846 /* Tire */,
 				EAF13AE325AD90C300636846 /* main.m */,
 			);
 			path = Composition;
+			sourceTree = "<group>";
+		};
+		EAF13AF425AEC1C800636846 /* Tire */ = {
+			isa = PBXGroup;
+			children = (
+				EAF13AEF25AEBFC900636846 /* Tire.h */,
+				EAF13AF025AEC17200636846 /* Tire.m */,
+			);
+			path = Tire;
+			sourceTree = "<group>";
+		};
+		EAF13AF525AEC1D000636846 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				EAF13AF625AEC1DA00636846 /* Engine.h */,
+				EAF13AF725AEC20100636846 /* Engine.m */,
+			);
+			path = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAF13AE425AD90C300636846 /* main.m in Sources */,
+				EAF13AF125AEC17200636846 /* Tire.m in Sources */,
+				EAF13AF825AEC20100636846 /* Engine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
