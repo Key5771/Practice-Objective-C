@@ -9,8 +9,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        // autoreleasepool을 사용하면 이 풀이 소멸될 때 풀에 있는 모든 객체에 release 메시지가 보내진다.
     }
     return 0;
 }
