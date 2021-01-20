@@ -60,10 +60,10 @@
 } // tireAtIndex:
 
 - (void) print {
-    NSLog(@"%@", tires[0]);
-    NSLog(@"%@", tires[1]);
-    NSLog(@"%@", tires[2]);
-    NSLog(@"%@", tires[3]);
+    int i;
+    for (i = 0; i < 4; i++) {
+        NSLog(@"%@", [self tireAtIndex: i]);
+    }
     
     NSLog(@"%@", engine);
 } // print
