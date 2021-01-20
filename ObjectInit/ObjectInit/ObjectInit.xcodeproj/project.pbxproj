@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		EAC1ADF525B7F68F00B5F5C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1ADF425B7F68F00B5F5C7 /* main.m */; };
 		EAC1ADFE25B7FC2600B5F5C7 /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1ADFD25B7FC2600B5F5C7 /* Tire.m */; };
+		EAC1AE0325B8003900B5F5C7 /* AllWeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1AE0225B8003900B5F5C7 /* AllWeatherRadial.m */; };
+		EAC1AE0925B800B000B5F5C7 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1AE0825B800B000B5F5C7 /* Engine.m */; };
+		EAC1AE0E25B8010B00B5F5C7 /* Slant6.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1AE0D25B8010B00B5F5C7 /* Slant6.m */; };
+		EAC1AE1425B801F500B5F5C7 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC1AE1325B801F500B5F5C7 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,14 @@
 		EAC1ADF425B7F68F00B5F5C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAC1ADFC25B7FBFF00B5F5C7 /* Tire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tire.h; sourceTree = "<group>"; };
 		EAC1ADFD25B7FC2600B5F5C7 /* Tire.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
+		EAC1AE0125B8001300B5F5C7 /* AllWeatherRadial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllWeatherRadial.h; sourceTree = "<group>"; };
+		EAC1AE0225B8003900B5F5C7 /* AllWeatherRadial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllWeatherRadial.m; sourceTree = "<group>"; };
+		EAC1AE0825B800B000B5F5C7 /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
+		EAC1AE0C25B800EF00B5F5C7 /* Slant6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Slant6.h; sourceTree = "<group>"; };
+		EAC1AE0D25B8010B00B5F5C7 /* Slant6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slant6.m; sourceTree = "<group>"; };
+		EAC1AE1225B8015700B5F5C7 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		EAC1AE1325B801F500B5F5C7 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		EAC1AE1725B8035000B5F5C7 /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +72,43 @@
 		EAC1ADF325B7F68F00B5F5C7 /* ObjectInit */ = {
 			isa = PBXGroup;
 			children = (
+				EAC1AE1125B8014B00B5F5C7 /* Car */,
+				EAC1AE0625B8006F00B5F5C7 /* Engine */,
+				EAC1AE0025B8000000B5F5C7 /* Tire */,
 				EAC1ADF425B7F68F00B5F5C7 /* main.m */,
-				EAC1ADFC25B7FBFF00B5F5C7 /* Tire.h */,
-				EAC1ADFD25B7FC2600B5F5C7 /* Tire.m */,
 			);
 			path = ObjectInit;
+			sourceTree = "<group>";
+		};
+		EAC1AE0025B8000000B5F5C7 /* Tire */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1ADFC25B7FBFF00B5F5C7 /* Tire.h */,
+				EAC1ADFD25B7FC2600B5F5C7 /* Tire.m */,
+				EAC1AE0125B8001300B5F5C7 /* AllWeatherRadial.h */,
+				EAC1AE0225B8003900B5F5C7 /* AllWeatherRadial.m */,
+			);
+			path = Tire;
+			sourceTree = "<group>";
+		};
+		EAC1AE0625B8006F00B5F5C7 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1AE1725B8035000B5F5C7 /* Engine.h */,
+				EAC1AE0825B800B000B5F5C7 /* Engine.m */,
+				EAC1AE0C25B800EF00B5F5C7 /* Slant6.h */,
+				EAC1AE0D25B8010B00B5F5C7 /* Slant6.m */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		EAC1AE1125B8014B00B5F5C7 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				EAC1AE1225B8015700B5F5C7 /* Car.h */,
+				EAC1AE1325B801F500B5F5C7 /* Car.m */,
+			);
+			path = Car;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC1AE1425B801F500B5F5C7 /* Car.m in Sources */,
 				EAC1ADF525B7F68F00B5F5C7 /* main.m in Sources */,
+				EAC1AE0925B800B000B5F5C7 /* Engine.m in Sources */,
 				EAC1ADFE25B7FC2600B5F5C7 /* Tire.m in Sources */,
+				EAC1AE0325B8003900B5F5C7 /* AllWeatherRadial.m in Sources */,
+				EAC1AE0E25B8010B00B5F5C7 /* Slant6.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
