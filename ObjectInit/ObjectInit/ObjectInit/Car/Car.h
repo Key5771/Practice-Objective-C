@@ -14,7 +14,7 @@
 @class Engine;
 
 @interface Car : NSObject {
-    Tire *tires[4];
+    NSMutableArray *tires;
     Engine *engine;
 }
 
