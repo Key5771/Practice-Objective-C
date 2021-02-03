@@ -28,6 +28,26 @@
     return (self);
 } // initWithPressure:treadDepth
 
+// pressure를 값을 넘겨받아 설정하고 treadDepth는 20.0으로 초기화
+- (id) initWithPressure: (float) p {
+    if (self = [super init]) {
+        pressure = p;
+        treadDepth = 20.0;
+    }
+    
+    return (self);
+} // initWithPressure:
+
+// pressure는 34.0으로 초기화하고 treadDepth는 값을 넘겨받아 설정
+- (id) initWithTreadDepth: (float) td {
+    if (self = [super init]) {
+        pressure = 34.0;
+        treadDepth = td;
+    }
+    
+    return (self);
+} // initWithTreadDepth:
+
 - (void) setPressure: (float) p {
     pressure = p;
 }
