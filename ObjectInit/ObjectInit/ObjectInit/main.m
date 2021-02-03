@@ -25,10 +25,14 @@ int main(int argc, const char * argv[]) {
         int i;
         for (i = 0; i < 4; i++) {
             Tire *tire;
-            tire = [[Tire alloc] init];
+            // 기존 방식(init)
+//            tire = [[Tire alloc] init];
+//
+//            [tire setPressure: 23 + i];
+//            [tire setTreadDepth: 33 - i];
             
-            [tire setPressure: 23 + i];
-            [tire setTreadDepth: 33 - i];
+            // 새로운 방식(initWithPressure:treadDepth)
+            tire = [[Tire alloc] initWithPressure: 23 + i treadDepth: 33 - i];
             
             [car setTire: tire atIndex: i];
         }

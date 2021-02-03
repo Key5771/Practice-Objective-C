@@ -19,6 +19,15 @@
     return (self);
 }
 
+- (id) initWithPressure: (float) p treadDepth: (float) td {
+    if (self = [super init]) {
+        pressure = p;
+        treadDepth = td;
+    }
+    
+    return (self);
+} // initWithPressure:treadDepth
+
 - (void) setPressure: (float) p {
     pressure = p;
 }
