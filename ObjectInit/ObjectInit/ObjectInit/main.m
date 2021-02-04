@@ -22,17 +22,26 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Car *car = [[Car alloc] init];
         
+//        int i;
+//        for (i = 0; i < 4; i++) {
+//            Tire *tire;
+//            // 기존 방식(init)
+////            tire = [[Tire alloc] init];
+////
+////            [tire setPressure: 23 + i];
+////            [tire setTreadDepth: 33 - i];
+//
+//            // 새로운 방식(initWithPressure:treadDepth)
+//            tire = [[Tire alloc] initWithPressure: 23 + i treadDepth: 33 - i];
+//
+//            [car setTire: tire atIndex: i];
+//        }
+        
         int i;
         for (i = 0; i < 4; i++) {
-            Tire *tire;
-            // 기존 방식(init)
-//            tire = [[Tire alloc] init];
-//
-//            [tire setPressure: 23 + i];
-//            [tire setTreadDepth: 33 - i];
+            AllWeatherRadial *tire;
             
-            // 새로운 방식(initWithPressure:treadDepth)
-            tire = [[Tire alloc] initWithPressure: 23 + i treadDepth: 33 - i];
+            tire = [[AllWeatherRadial alloc] init];
             
             [car setTire: tire atIndex: i];
         }
