@@ -15,7 +15,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Car *car = [[Car alloc] init];
-        [car setName: @"Herbie"];
+        car.name = @"Herbie";
         
         int i;
         for (i = 0; i < 4; i++) {
@@ -36,8 +36,7 @@ int main(int argc, const char * argv[]) {
             [car setTire: tire atIndex: i];
         }
         
-        Engine *engine = [[Slant6 alloc] init];
-        [car setEngine: engine];
+        car.engine = [[Slant6 alloc] init];
         
         [car print];
     }

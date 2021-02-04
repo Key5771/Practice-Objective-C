@@ -19,11 +19,8 @@
     Engine *engine;
 }
 
-- (void) setName: (NSString *) newName;
-- (NSString *) name;
-
-- (void) setEngine: (Engine *) newEngine;
-- (Engine *) engine;
+@property (copy) NSString *name;
+@property (retain) Engine *engine;
 
 - (void) setTire: (Tire *) tire atIndex: (int) index;
 - (Tire *) tireAtIndex: (int) index;

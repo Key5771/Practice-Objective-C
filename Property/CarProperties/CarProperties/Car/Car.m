@@ -13,6 +13,9 @@
 
 @implementation Car
 
+@synthesize name;
+@synthesize engine;
+
 - (id) init {
     if (self = [super init]) {
         name = @"Car";
@@ -26,22 +29,6 @@
     
     return (self);
 }
-
-- (void) setName: (NSString *) newName {
-    name = [newName copy];
-} // setName
-
-- (NSString *) name {
-    return (name);
-} // name
-
-- (void) setEngine: (Engine *) newEngine {
-    engine = newEngine;
-} // setEngine
-
-- (Engine *) engine {
-    return (engine);
-} // engine
 
 - (void) setTire: (Tire *) tire atIndex: (int) index {
 //    if (index < 0 || index > 3) {
