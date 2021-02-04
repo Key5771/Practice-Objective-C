@@ -14,9 +14,13 @@
 @class Engine;
 
 @interface Car : NSObject {
+    NSString *name;
     NSMutableArray *tires;
     Engine *engine;
 }
+
+- (void) setName: (NSString *) newName;
+- (NSString *) name;
 
 - (void) setEngine: (Engine *) newEngine;
 - (Engine *) engine;

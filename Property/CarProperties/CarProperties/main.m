@@ -15,6 +15,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Car *car = [[Car alloc] init];
+        [car setName: @"Herbie"];
         
         int i;
         for (i = 0; i < 4; i++) {
