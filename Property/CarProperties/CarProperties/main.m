@@ -21,9 +21,16 @@ int main(int argc, const char * argv[]) {
             AllWeatherRadial *tire;
             
             tire = [[AllWeatherRadial alloc] init];
-            [tire setRainHandling: 20 + i];
-            [tire setSnowHandling: 28 + i];
-            NSLog(@"the tire's handling is %.f %.f", [tire rainHandling], [tire snowHandling]);
+            
+            // MARK: - Before Objective-C 2.0 version
+//            [tire setRainHandling: 20 + i];
+//            [tire setSnowHandling: 28 + i];
+            
+            // MARK: - After Objective-C 2.0 version
+            tire.rainHandling = 20 + i;
+            tire.snowHandling = 28 + i;
+            
+            NSLog(@"the tire's handling is %.f %.f", tire.rainHandling, tire.snowHandling);
             
             [car setTire: tire atIndex: i];
         }
