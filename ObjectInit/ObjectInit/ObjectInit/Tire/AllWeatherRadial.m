@@ -10,8 +10,29 @@
 
 @implementation AllWeatherRadial
 
+- (void) setRainHandling: (float) rh {
+    rainHandling = rh;
+} // setRainHandling
+
+- (float) rainHandling {
+    return (rainHandling);
+} // rainHandling
+
+- (void) setSnowHandling: (float) sh {
+    snowHandling = sh;
+}
+
+- (float) snowHandling {
+    return (snowHandling);
+}
+
 - (NSString *) description {
-    return (@"I am a tire for rain or shine.");
+    NSString *desc;
+    
+    desc = [[NSString alloc] initWithFormat: @"AllWeatherRadial: %.1f / %.1f / %.1f / %.1f",
+            [self pressure], [self treadDepth], [self rainHandling], [self snowHandling]];
+    
+    return (desc);
 }
 
 @end
