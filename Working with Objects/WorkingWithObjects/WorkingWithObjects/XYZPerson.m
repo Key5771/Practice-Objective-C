@@ -11,8 +11,12 @@
 @implementation XYZPerson
 
 - (void) sayHello: (NSString *) name {
-    NSLog(@"Hello, %@", name);
+    [self saySomeThing: @"Hello Everyone"];
 } // sayHello
+
+- (void) saySomeThing: (NSString *) greet {
+    NSLog(@"%@", greet);
+}
 
 - (int) maginNumber {
     return 42;
@@ -20,6 +24,6 @@
 
 - (NSString *) magicString: (NSString *) input {
     return [input uppercaseString];
-}
+} // magicString
 
 @end // XYZPerson
