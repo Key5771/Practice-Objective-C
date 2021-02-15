@@ -56,6 +56,24 @@ int main(int argc, const char * argv[]) {
         someShoutingPerson = [[XYZShoutingPerson alloc] init];
         
         [someShoutingPerson someMethod];
+        
+        // MARK: - define weak variable example
+        // NSObject * __weak someObject = [[NSObject alloc] init];
+        // weak reference에 여러번 엑세스 해야하는 상황에는 weak reference를 strong variable에 캐시하여 사용
+        // ex)
+        // - (void) someMethod {
+        //     NSObject * cachedObject = self.weakProperty;
+        //     [cachedObject doSomething];
+        //     [cachedObject doSomethingElse];
+        // }
+        
+        // MARK: ARC Ownership
+        // variable: __strong, property: (strong)
+        // variable: __unsafe_unretained, property: (unsafe_unretained)
+        // variable: __weak, property: (weak)
+        // variable: __autoreleasing, property: (autoreleasing)
+        
+        
     }
     return 0;
 }
