@@ -41,12 +41,14 @@ int main(int argc, const char * argv[]) {
         
         // MARK: - Dot Syntax
         XYZPerson * somePerson;
-        somePerson = [[XYZPerson alloc] init];
+        somePerson = [[XYZPerson alloc] initWithFirstName: @"kihyun" lastName: @"Kim" dateOfBirth: nil];
         
-        somePerson.firstName = @"johnny";
+//        somePerson.firstName = @"johnny";
         NSString * firstName = somePerson.firstName;
+        NSString * lastName = somePerson.lastName;
         
         NSLog(@"firstName: %@", firstName);
+        NSLog(@"lastName: %@", lastName);
         
         XYZShoutingPerson * someShoutingPerson;
         someShoutingPerson = [[XYZShoutingPerson alloc] init];

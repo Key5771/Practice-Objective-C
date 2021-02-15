@@ -18,6 +18,12 @@
 @property NSString * lastName;
 
 // MARK: - Method
+- (id) initWithFirstName: (NSString *) aFirstName lastName : (NSString *) aLastNamme;
+- (id) initWithFirstName: (NSString *) aFirstName
+               lastName : (NSString *) aLastName
+            dateOfBirth : (NSDate *) aDOB;
+- (id) init;
+
 - (void) sayHello: (NSString *) name;
 - (void) saySomething: (NSString *) greet;
 - (int) maginNumber;
