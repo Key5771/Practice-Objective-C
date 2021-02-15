@@ -47,6 +47,11 @@ int main(int argc, const char * argv[]) {
         NSString * firstName = somePerson.firstName;
         
         NSLog(@"firstName: %@", firstName);
+        
+        XYZShoutingPerson * someShoutingPerson;
+        someShoutingPerson = [[XYZShoutingPerson alloc] init];
+        
+        [someShoutingPerson someMethod];
     }
     return 0;
 }

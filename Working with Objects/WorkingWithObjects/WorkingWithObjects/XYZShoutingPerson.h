@@ -12,6 +12,9 @@
 
 @interface XYZShoutingPerson : XYZPerson
 
+@property NSString * someString;
+
+- (void) someMethod;
 
 @end
 
