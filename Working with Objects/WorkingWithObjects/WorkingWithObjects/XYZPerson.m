@@ -18,4 +18,8 @@
     return 42;
 } // magicNumber
 
+- (NSString *) magicString: (NSString *) input {
+    return [input uppercaseString];
+}
+
 @end // XYZPerson

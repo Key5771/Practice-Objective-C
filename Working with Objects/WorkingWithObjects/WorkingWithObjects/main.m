@@ -17,6 +17,12 @@ int main(int argc, const char * argv[]) {
         
         int resultNumber = [somePerson maginNumber];
         NSLog(@"resultNumber: %d", resultNumber);
+        
+        NSString *testString = @"Hello, World";
+        NSString *revisedString = [somePerson magicString: testString];
+        
+        NSLog(@"testString : %@", testString);
+        NSLog(@"revisedString : %@", revisedString);
     }
     return 0;
 }

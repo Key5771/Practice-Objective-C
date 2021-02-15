@@ -12,6 +12,7 @@
 
 - (void) sayHello: (NSString *) name;
 - (int) maginNumber;
+- (NSString *) magicString: (NSString *) input;
 
 @end // XYZPerson
 
