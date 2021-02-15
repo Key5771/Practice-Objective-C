@@ -6,3 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XYZPerson.h"
+
+@implementation XYZPerson
+
+- (void) sayHello: (NSString *) name {
+    NSLog(@"Hello, %@", name);
+} // sayHello
+
+@end // XYZPerson
