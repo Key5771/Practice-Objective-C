@@ -11,24 +11,32 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        XYZPerson *somePerson;
+//        XYZPerson *somePerson;
+//        somePerson = [[XYZPerson alloc] init];
+//
+//        [somePerson sayHello: @"key"];
+//
+//        int resultNumber = [somePerson maginNumber];
+//        NSLog(@"resultNumber: %d", resultNumber);
+//
+//        NSString *testString = @"Hello, World";
+//        NSString *revisedString = [somePerson magicString: testString];
+//
+//        NSLog(@"testString : %@", testString);
+//        NSLog(@"revisedString : %@", revisedString);
+//
+//        XYZShoutingPerson *someShoutingPerson;
+//        someShoutingPerson = [[XYZShoutingPerson alloc] init];
+//
+//        [someShoutingPerson sayHello: @"Hello, Shouting Person"];
+        
+        XYZPerson * somePerson;
         somePerson = [[XYZPerson alloc] init];
         
-        [somePerson sayHello: @"key"];
+        [somePerson setFirstName: @"johnny"];
+        NSString * firstName = [somePerson firstName];
         
-        int resultNumber = [somePerson maginNumber];
-        NSLog(@"resultNumber: %d", resultNumber);
-        
-        NSString *testString = @"Hello, World";
-        NSString *revisedString = [somePerson magicString: testString];
-        
-        NSLog(@"testString : %@", testString);
-        NSLog(@"revisedString : %@", revisedString);
-        
-        XYZShoutingPerson *someShoutingPerson;
-        someShoutingPerson = [[XYZShoutingPerson alloc] init];
-        
-        [someShoutingPerson sayHello: @"Hello, Shouting Person"];
+        NSLog(@"%@", firstName);
     }
     return 0;
 }
