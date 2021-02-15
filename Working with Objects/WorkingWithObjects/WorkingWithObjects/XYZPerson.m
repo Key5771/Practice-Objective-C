@@ -14,4 +14,8 @@
     NSLog(@"Hello, %@", name);
 } // sayHello
 
+- (int) maginNumber {
+    return 42;
+} // magicNumber
+
 @end // XYZPerson

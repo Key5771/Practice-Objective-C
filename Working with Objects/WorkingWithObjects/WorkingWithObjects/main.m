@@ -14,6 +14,9 @@ int main(int argc, const char * argv[]) {
         somePerson = [[XYZPerson alloc] init];
         
         [somePerson sayHello: @"key"];
+        
+        int resultNumber = [somePerson maginNumber];
+        NSLog(@"resultNumber: %d", resultNumber);
     }
     return 0;
 }
