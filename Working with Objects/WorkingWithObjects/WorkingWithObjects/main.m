@@ -30,13 +30,23 @@ int main(int argc, const char * argv[]) {
 //
 //        [someShoutingPerson sayHello: @"Hello, Shouting Person"];
         
+        // MARK: - Propery 사용
+//        XYZPerson * somePerson;
+//        somePerson = [[XYZPerson alloc] init];
+//
+//        [somePerson setFirstName: @"johnny"];
+//        NSString * firstName = [somePerson firstName];
+//
+//        NSLog(@"%@", firstName);
+        
+        // MARK: - Dot Syntax
         XYZPerson * somePerson;
         somePerson = [[XYZPerson alloc] init];
         
-        [somePerson setFirstName: @"johnny"];
-        NSString * firstName = [somePerson firstName];
+        somePerson.firstName = @"johnny";
+        NSString * firstName = somePerson.firstName;
         
-        NSLog(@"%@", firstName);
+        NSLog(@"firstName: %@", firstName);
     }
     return 0;
 }
