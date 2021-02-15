@@ -10,6 +10,7 @@
 
 @implementation XYZPerson
 
+// MARK: - Initializer
 - (id) initWithFirstName: (NSString *) aFirstName lastName: (NSString *) aLastNamme {
     self = [super self];
     
@@ -38,6 +39,7 @@
     return [self initWithFirstName: @"John" lastName: @"Doe" dateOfBirth: nil];
 }
 
+// MARK: - Method
 - (void) sayHello: (NSString *) name {
     [self saySomething: name];
 } // sayHello
@@ -53,5 +55,9 @@
 - (NSString *) magicString: (NSString *) input {
     return [input uppercaseString];
 } // magicString
+
+- (NSString *) fullName {
+    return [NSString stringWithFormat: @"%@ %@", self.firstName, self.lastName];
+}
 
 @end // XYZPerson

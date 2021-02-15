@@ -16,6 +16,7 @@
 // setter 메서드는 property 이름 앞에 set이라는 단어로 시작하여 대문자로 된 속성 이름을 사용
 @property NSString * firstName;
 @property NSString * lastName;
+@property (readonly) NSString * fullName;
 
 // MARK: - Method
 - (id) initWithFirstName: (NSString *) aFirstName lastName : (NSString *) aLastNamme;
