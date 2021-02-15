@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "XYZPerson.h"
+#import "XYZShoutingPerson.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -23,6 +24,11 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"testString : %@", testString);
         NSLog(@"revisedString : %@", revisedString);
+        
+        XYZShoutingPerson *someShoutingPerson;
+        someShoutingPerson = [[XYZShoutingPerson alloc] init];
+        
+        [someShoutingPerson sayHello: @"Hello, Shouting Person"];
     }
     return 0;
 }

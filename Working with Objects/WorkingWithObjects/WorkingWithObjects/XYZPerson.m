@@ -11,12 +11,12 @@
 @implementation XYZPerson
 
 - (void) sayHello: (NSString *) name {
-    [self saySomeThing: @"Hello Everyone"];
+    [self saySomething: name];
 } // sayHello
 
-- (void) saySomeThing: (NSString *) greet {
+- (void) saySomething: (NSString *) greet {
     NSLog(@"%@", greet);
-}
+} // saySomething
 
 - (int) maginNumber {
     return 42;

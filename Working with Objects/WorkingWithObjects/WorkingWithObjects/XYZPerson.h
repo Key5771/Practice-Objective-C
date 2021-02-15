@@ -11,6 +11,7 @@
 @interface XYZPerson : NSObject
 
 - (void) sayHello: (NSString *) name;
+- (void) saySomething: (NSString *) greet;
 - (int) maginNumber;
 - (NSString *) magicString: (NSString *) input;
 
