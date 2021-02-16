@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA1E029025DB964200EE110A /* ITunesFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E028F25DB964200EE110A /* ITunesFinder.m */; };
 		EA49797A25D389D60040A3C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA49797925D389D60040A3C8 /* main.m */; };
 		EA49798525D390930040A3C8 /* CategoryThing.m in Sources */ = {isa = PBXBuildFile; fileRef = EA49798425D390930040A3C8 /* CategoryThing.m */; };
 		EA49798A25D391800040A3C8 /* Thing1.m in Sources */ = {isa = PBXBuildFile; fileRef = EA49798925D391800040A3C8 /* Thing1.m */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA1E028E25DB95F700EE110A /* ITunesFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITunesFinder.h; sourceTree = "<group>"; };
+		EA1E028F25DB964200EE110A /* ITunesFinder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITunesFinder.m; sourceTree = "<group>"; };
 		EA49797625D389D60040A3C8 /* CategoryThing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CategoryThing; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA49797925D389D60040A3C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA49798225D38FA90040A3C8 /* CategoryThing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryThing.h; sourceTree = "<group>"; };
@@ -47,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA1E028D25DB95DD00EE110A /* ITunesFinder */ = {
+			isa = PBXGroup;
+			children = (
+				EA1E028E25DB95F700EE110A /* ITunesFinder.h */,
+				EA1E028F25DB964200EE110A /* ITunesFinder.m */,
+			);
+			path = ITunesFinder;
+			sourceTree = "<group>";
+		};
 		EA49796D25D389D60040A3C8 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				EA49797925D389D60040A3C8 /* main.m */,
+				EA1E028D25DB95DD00EE110A /* ITunesFinder */,
 				EA49798325D38FB20040A3C8 /* Category */,
 			);
 			path = CategoryThing;
@@ -153,6 +166,7 @@
 				EA49799025D3922E0040A3C8 /* Thing3.m in Sources */,
 				EA49798A25D391800040A3C8 /* Thing1.m in Sources */,
 				EA49798D25D391E10040A3C8 /* Thing2.m in Sources */,
+				EA1E029025DB964200EE110A /* ITunesFinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
