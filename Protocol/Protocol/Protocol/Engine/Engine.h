@@ -8,7 +8,7 @@
 #ifndef Engine_h
 #define Engine_h
 
-@interface Engine : NSObject
+@interface Engine : NSObject <NSCopying>
 @end // Engine
 
 #endif /* Engine_h */

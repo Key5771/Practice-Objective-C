@@ -10,6 +10,13 @@
 
 @implementation Engine
 
+- (id) copyWithZone: (NSZone *) zone {
+    Engine * engineCopy;
+    engineCopy = [[[self class] allocWithZone: zone] init];
+    
+    return engineCopy;
+}
+
 - (NSString *) description {
     return @"I am an engine. Vroom!";
 } // description
