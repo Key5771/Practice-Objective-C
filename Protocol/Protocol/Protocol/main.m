@@ -34,6 +34,10 @@ int main(int argc, const char * argv[]) {
         car.engine = [[Slant6 alloc] init];
         
         [car print];
+        
+        Car * carCopy = [car copy];
+        [carCopy print];
+        
     }
     return 0;
 }
