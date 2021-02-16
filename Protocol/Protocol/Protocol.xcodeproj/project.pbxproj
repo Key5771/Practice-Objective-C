@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA1E02A025DB9BF600EE110A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E029F25DB9BF600EE110A /* main.m */; };
 		EA1E02AE25DB9CEF00EE110A /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E02AD25DB9CEF00EE110A /* Tire.m */; };
+		EA1E02B325DB9EE600EE110A /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E02B225DB9EE600EE110A /* Engine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		EA1E029F25DB9BF600EE110A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA1E02AC25DB9C5500EE110A /* Tire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tire.h; sourceTree = "<group>"; };
 		EA1E02AD25DB9CEF00EE110A /* Tire.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
+		EA1E02B125DB9EC800EE110A /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		EA1E02B225DB9EE600EE110A /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 		EA1E02AA25DB9C4200EE110A /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				EA1E02B125DB9EC800EE110A /* Engine.h */,
+				EA1E02B225DB9EE600EE110A /* Engine.m */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			files = (
 				EA1E02A025DB9BF600EE110A /* main.m in Sources */,
 				EA1E02AE25DB9CEF00EE110A /* Tire.m in Sources */,
+				EA1E02B325DB9EE600EE110A /* Engine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
