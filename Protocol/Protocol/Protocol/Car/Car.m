@@ -15,6 +15,7 @@
 @synthesize name = appellation;
 @synthesize engine;
 
+// MARK: - Initializer
 - (id) init {
     if (self = [super init]) {
         self.name = @"Car";
@@ -29,6 +30,28 @@
     return self;
 } // init
 
+- (id) copyWithZone: (NSZone *) zone {
+    Car * carCopy;
+    carCopy = [[[self class] allocWithZone: zone] init];
+    
+    carCopy.name = self.name;
+    
+    Engine * engineCopy;
+    engineCopy = [engine copy];
+    carCopy.engine = engineCopy;
+    
+    int i;
+    for (i = 0; i < 4; i++) {
+        Tire * tireCopy;
+        tireCopy = [[self tireAtIndex: i] copy];
+        
+        [carCopy setTire: tireCopy atIndex: i];
+    }
+    
+    return carCopy;
+}
+
+// MARK: - Method
 - (void) setTire: (Tire *) tire atIndex: (int) index {
     [tires replaceObjectAtIndex: index withObject: tire];
 } // setTire:atIndex:
