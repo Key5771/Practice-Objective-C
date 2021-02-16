@@ -43,6 +43,10 @@
     [resultLabel setStringValue: lowercase];
 } // lowercase
 
+- (IBAction) close:(id)sender {
+    [NSApp terminate: self];
+}
+
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];

@@ -14,6 +14,7 @@
 
 - (IBAction) uppercase: (id) sender;
 - (IBAction) lowercase: (id) sender;
+- (IBAction) close: (id) sender;
 
 @end // ViewController
 
