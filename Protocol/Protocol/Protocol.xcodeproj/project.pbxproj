@@ -10,6 +10,7 @@
 		EA1E02A025DB9BF600EE110A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E029F25DB9BF600EE110A /* main.m */; };
 		EA1E02AE25DB9CEF00EE110A /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E02AD25DB9CEF00EE110A /* Tire.m */; };
 		EA1E02B325DB9EE600EE110A /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E02B225DB9EE600EE110A /* Engine.m */; };
+		EA1E02B825DBA10E00EE110A /* AllWeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E02B725DBA10E00EE110A /* AllWeatherRadial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		EA1E02AD25DB9CEF00EE110A /* Tire.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
 		EA1E02B125DB9EC800EE110A /* Engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
 		EA1E02B225DB9EE600EE110A /* Engine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
+		EA1E02B625DBA0BA00EE110A /* AllWeatherRadial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllWeatherRadial.h; sourceTree = "<group>"; };
+		EA1E02B725DBA10E00EE110A /* AllWeatherRadial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllWeatherRadial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 			children = (
 				EA1E02AC25DB9C5500EE110A /* Tire.h */,
 				EA1E02AD25DB9CEF00EE110A /* Tire.m */,
+				EA1E02B625DBA0BA00EE110A /* AllWeatherRadial.h */,
+				EA1E02B725DBA10E00EE110A /* AllWeatherRadial.m */,
 			);
 			path = Tire;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 				EA1E02A025DB9BF600EE110A /* main.m in Sources */,
 				EA1E02AE25DB9CEF00EE110A /* Tire.m in Sources */,
 				EA1E02B325DB9EE600EE110A /* Engine.m in Sources */,
+				EA1E02B825DBA10E00EE110A /* AllWeatherRadial.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
