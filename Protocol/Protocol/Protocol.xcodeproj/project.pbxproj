@@ -12,6 +12,7 @@
 		EA1E02B325DB9EE600EE110A /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E02B225DB9EE600EE110A /* Engine.m */; };
 		EA1E02B825DBA10E00EE110A /* AllWeatherRadial.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E02B725DBA10E00EE110A /* AllWeatherRadial.m */; };
 		EA1E02BD25DBA42500EE110A /* Slant6.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E02BC25DBA42500EE110A /* Slant6.m */; };
+		EA1E02C225DBA50400EE110A /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E02C125DBA50400EE110A /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		EA1E02B725DBA10E00EE110A /* AllWeatherRadial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllWeatherRadial.m; sourceTree = "<group>"; };
 		EA1E02BB25DBA40100EE110A /* Slant6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Slant6.h; sourceTree = "<group>"; };
 		EA1E02BC25DBA42500EE110A /* Slant6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slant6.m; sourceTree = "<group>"; };
+		EA1E02C025DBA47A00EE110A /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		EA1E02C125DBA50400EE110A /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 		EA1E02A925DB9C3D00EE110A /* Car */ = {
 			isa = PBXGroup;
 			children = (
+				EA1E02C025DBA47A00EE110A /* Car.h */,
+				EA1E02C125DBA50400EE110A /* Car.m */,
 			);
 			path = Car;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1E02C225DBA50400EE110A /* Car.m in Sources */,
 				EA1E02A025DB9BF600EE110A /* main.m in Sources */,
 				EA1E02AE25DB9CEF00EE110A /* Tire.m in Sources */,
 				EA1E02B325DB9EE600EE110A /* Engine.m in Sources */,
