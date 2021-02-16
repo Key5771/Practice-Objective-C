@@ -7,8 +7,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController {
+    __weak IBOutlet NSTextField *textField;
+    __weak IBOutlet NSTextField *resultLabel;
+}
 
+- (IBAction) uppercase: (id) sender;
+- (IBAction) lowercase: (id) sender;
 
-@end
+@end // ViewController
 

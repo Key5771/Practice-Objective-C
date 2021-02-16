@@ -9,11 +9,39 @@
 
 @implementation ViewController
 
+- (id) init {
+    if (self = [super init]) {
+        NSLog(@"init: text %@ / results %@", textField, resultLabel);
+    }
+    
+    return self;
+} // init
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-}
+} // viewDidLoad
+
+- (IBAction) uppercase: (id) sender {
+    NSString * original;
+    original = [textField stringValue];
+    
+    NSString * uppercase;
+    uppercase = [original uppercaseString];
+    
+    [resultLabel setStringValue: uppercase];
+} // uppercase
+
+- (IBAction) lowercase: (id) sender {
+    NSString * original;
+    original = [textField stringValue];
+    
+    NSString * lowercase;
+    lowercase = [original lowercaseString];
+    
+    [resultLabel setStringValue: lowercase];
+} // lowercase
 
 
 - (void)setRepresentedObject:(id)representedObject {
