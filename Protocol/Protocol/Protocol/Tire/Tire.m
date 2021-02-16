@@ -44,6 +44,13 @@
     return self;
 } // initWithTreadDepth:
 
+- (id) copyWithZone: (NSZone *) zone {
+    Tire * tireCopy;
+    tireCopy = [[[self class] alloc] initWithPressure: pressure treadDepth: treadDepth];
+    
+    return tireCopy;
+} // copyWithZone: (NSCopying protocol method)
+
 
 // MARK: - Method
 - (void) setPressure: (float) p {

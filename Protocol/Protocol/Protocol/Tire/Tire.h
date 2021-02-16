@@ -8,7 +8,7 @@
 #ifndef Tire_h
 #define Tire_h
 
-@interface Tire : NSObject {
+@interface Tire : NSObject <NSCopying> {
     float pressure;
     float treadDepth;
 }
