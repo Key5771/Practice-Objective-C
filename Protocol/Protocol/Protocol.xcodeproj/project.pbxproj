@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA1E02A025DB9BF600EE110A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E029F25DB9BF600EE110A /* main.m */; };
+		EA1E02AE25DB9CEF00EE110A /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E02AD25DB9CEF00EE110A /* Tire.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		EA1E029C25DB9BF600EE110A /* Protocol */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Protocol; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1E029F25DB9BF600EE110A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA1E02AC25DB9C5500EE110A /* Tire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tire.h; sourceTree = "<group>"; };
+		EA1E02AD25DB9CEF00EE110A /* Tire.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,35 @@
 		EA1E029E25DB9BF600EE110A /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				EA1E02AB25DB9C4700EE110A /* Tire */,
+				EA1E02AA25DB9C4200EE110A /* Engine */,
+				EA1E02A925DB9C3D00EE110A /* Car */,
 				EA1E029F25DB9BF600EE110A /* main.m */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EA1E02A925DB9C3D00EE110A /* Car */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		EA1E02AA25DB9C4200EE110A /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		EA1E02AB25DB9C4700EE110A /* Tire */ = {
+			isa = PBXGroup;
+			children = (
+				EA1E02AC25DB9C5500EE110A /* Tire.h */,
+				EA1E02AD25DB9CEF00EE110A /* Tire.m */,
+			);
+			path = Tire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA1E02A025DB9BF600EE110A /* main.m in Sources */,
+				EA1E02AE25DB9CEF00EE110A /* Tire.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
