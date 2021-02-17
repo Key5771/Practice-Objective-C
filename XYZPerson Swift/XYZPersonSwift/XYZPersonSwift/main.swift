@@ -20,3 +20,10 @@ print("==============================")
 
 print("anotherFullName: \(anotherFullName)")
 anotherPerson.sayHello(name: anotherFullName)
+
+
+print("++++++++++++++++++++++++++++++")
+
+let someShoutingPerson: XYZShoutingPerson = XYZShoutingPerson(aFirstName: "KiHyun", aLastName: "Kim")
+someShoutingPerson.someMethod()
+someShoutingPerson.saySomeThing(greet: someShoutingPerson.getFullName())
