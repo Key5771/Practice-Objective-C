@@ -33,7 +33,7 @@ class AllWeatherRadial: Tire {
     override func description() -> String {
         let desc: String
         
-        desc = String(format: "AllWeatherRadial: %.1f, %.1f, %.1f, %.1f",
+        desc = String(format: "AllWeatherRadial: %.1f / %.1f / %.1f / %.1f",
                       self.pressure, self.treadDepth, self.rainHandling, self.snowHandling)
         
         return desc

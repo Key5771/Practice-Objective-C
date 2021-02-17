@@ -42,7 +42,7 @@ class Car: NSCopying {
 //            carCopy?.setTire(tireResult, at: i)
             
             var tireCopy: Tire?
-            tireCopy = tire(at: i)?.copy() as? Tire
+            tireCopy = self.tire(at: i)?.copy() as? Tire
             
             carCopy?.setTire(tireCopy, at: i)
         }
