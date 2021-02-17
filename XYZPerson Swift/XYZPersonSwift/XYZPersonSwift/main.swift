@@ -7,5 +7,16 @@
 
 import Foundation
 
-print("Hello, World!")
+let somePerson = XYZPerson(aFirstName: "KiHyun", aLastName: "Kim")
+let anotherPerson = XYZPerson()
 
+let someFullName: String = somePerson.getFullName()
+let anotherFullName: String = anotherPerson.getFullName()
+
+print("someFullName: \(someFullName)")
+somePerson.sayHello(name: someFullName)
+
+print("==============================")
+
+print("anotherFullName: \(anotherFullName)")
+anotherPerson.sayHello(name: anotherFullName)
