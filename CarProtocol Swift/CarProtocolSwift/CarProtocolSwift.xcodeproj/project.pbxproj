@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA1E032F25DCAEA100EE110A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E032E25DCAEA100EE110A /* main.swift */; };
 		EA1E033A25DCAEDD00EE110A /* Tire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E033925DCAEDD00EE110A /* Tire.swift */; };
+		EA1E033E25DCB67100EE110A /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E033D25DCB67100EE110A /* Engine.swift */; };
+		EA1E034125DCB74100EE110A /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E034025DCB74100EE110A /* Car.swift */; };
+		EA1E034525DCE44B00EE110A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E034425DCE44B00EE110A /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,8 +27,10 @@
 
 /* Begin PBXFileReference section */
 		EA1E032B25DCAEA100EE110A /* CarProtocolSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CarProtocolSwift; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA1E032E25DCAEA100EE110A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EA1E033925DCAEDD00EE110A /* Tire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tire.swift; sourceTree = "<group>"; };
+		EA1E033D25DCB67100EE110A /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		EA1E034025DCB74100EE110A /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		EA1E034425DCE44B00EE110A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,7 @@
 				EA1E033825DCAEC300EE110A /* Tire */,
 				EA1E033725DCAEBE00EE110A /* Engine */,
 				EA1E033625DCAEBA00EE110A /* Car */,
-				EA1E032E25DCAEA100EE110A /* main.swift */,
+				EA1E034425DCE44B00EE110A /* main.swift */,
 			);
 			path = CarProtocolSwift;
 			sourceTree = "<group>";
@@ -70,6 +74,7 @@
 		EA1E033625DCAEBA00EE110A /* Car */ = {
 			isa = PBXGroup;
 			children = (
+				EA1E034025DCB74100EE110A /* Car.swift */,
 			);
 			path = Car;
 			sourceTree = "<group>";
@@ -77,6 +82,7 @@
 		EA1E033725DCAEBE00EE110A /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				EA1E033D25DCB67100EE110A /* Engine.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -146,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1E032F25DCAEA100EE110A /* main.swift in Sources */,
+				EA1E033E25DCB67100EE110A /* Engine.swift in Sources */,
+				EA1E034125DCB74100EE110A /* Car.swift in Sources */,
+				EA1E034525DCE44B00EE110A /* main.swift in Sources */,
 				EA1E033A25DCAEDD00EE110A /* Tire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
