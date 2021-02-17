@@ -11,6 +11,8 @@
 		EA1E033E25DCB67100EE110A /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E033D25DCB67100EE110A /* Engine.swift */; };
 		EA1E034125DCB74100EE110A /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E034025DCB74100EE110A /* Car.swift */; };
 		EA1E034525DCE44B00EE110A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E034425DCE44B00EE110A /* main.swift */; };
+		EA1E034825DCE53600EE110A /* AllWeatherRadial.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E034725DCE53600EE110A /* AllWeatherRadial.swift */; };
+		EA1E034B25DCE7DF00EE110A /* Slant6.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E034A25DCE7DF00EE110A /* Slant6.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,8 @@
 		EA1E033D25DCB67100EE110A /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 		EA1E034025DCB74100EE110A /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		EA1E034425DCE44B00EE110A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EA1E034725DCE53600EE110A /* AllWeatherRadial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWeatherRadial.swift; sourceTree = "<group>"; };
+		EA1E034A25DCE7DF00EE110A /* Slant6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slant6.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EA1E033D25DCB67100EE110A /* Engine.swift */,
+				EA1E034A25DCE7DF00EE110A /* Slant6.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				EA1E033925DCAEDD00EE110A /* Tire.swift */,
+				EA1E034725DCE53600EE110A /* AllWeatherRadial.swift */,
 			);
 			path = Tire;
 			sourceTree = "<group>";
@@ -153,6 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA1E033E25DCB67100EE110A /* Engine.swift in Sources */,
+				EA1E034B25DCE7DF00EE110A /* Slant6.swift in Sources */,
+				EA1E034825DCE53600EE110A /* AllWeatherRadial.swift in Sources */,
 				EA1E034125DCB74100EE110A /* Car.swift in Sources */,
 				EA1E034525DCE44B00EE110A /* main.swift in Sources */,
 				EA1E033A25DCAEDD00EE110A /* Tire.swift in Sources */,

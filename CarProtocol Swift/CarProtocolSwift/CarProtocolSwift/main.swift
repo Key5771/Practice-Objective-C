@@ -11,13 +11,22 @@ let car: Car = Car()
 car.name = "Herbie"
 
 for i in 0..<4 {
-    let tire: Tire = Tire()
+    let tire: AllWeatherRadial = AllWeatherRadial()
     
-    print("tire: \(tire.description())")
+    tire.rainHandling = 20 + Float(i)
+    tire.snowHandling = 28 + Float(i)
+    
+    print("the tire's handling is", tire.rainHandling, tire.snowHandling)
     
     car.setTire(tire, at: i)
 }
 
-car.engine = Engine()
+car.engine = Slant6()
 
 car.printLog()
+
+print("=======================")
+
+guard let carCopy = car.copy() as? Car else { fatalError() }
+
+carCopy.printLog()

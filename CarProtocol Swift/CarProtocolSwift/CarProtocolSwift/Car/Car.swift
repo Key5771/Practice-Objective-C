@@ -28,19 +28,39 @@ class Car: NSCopying {
         carCopy = type(of: self).init()
         
         guard let result = carCopy else { fatalError("car copy fail") }
+        
+        result.name = self.name
+        
+        guard let engineCopy = engine?.copy() as? Engine else { fatalError("engine copy fail") }
+        result.engine = engineCopy
+        
+        for i in 0..<4 {
+//            let tireCopy: Tire?
+//            tireCopy = self.tire(at: i)?.copy() as? Tire
+//
+//            guard let tireResult = tireCopy else { fatalError() }
+//            carCopy?.setTire(tireResult, at: i)
+            
+            var tireCopy: Tire?
+            tireCopy = tire(at: i)?.copy() as? Tire
+            
+            carCopy?.setTire(tireCopy, at: i)
+        }
+        
         return result
     }
     
     func setTire(_ tire: Tire?, at index: Int) {
-        guard var tires = self.tires, let tire = tire else { fatalError("tires or tire nil") }
-        tires[index] = tire
+        if let tire = tire {
+            tires?[index] = tire
+        }
     }
     
     func tire(at index: Int) -> Tire? {
         let tire: Tire?
         
-        guard let tires = self.tires else { fatalError("tires nil") }
-        tire = tires[index]
+        guard let tiresArr = self.tires else { fatalError("tires nil") }
+        tire = tiresArr[index]
         
         return tire
     }
@@ -53,9 +73,9 @@ class Car: NSCopying {
         
         for i in 0..<4 {
             guard let result = tire(at: i) else { fatalError() }
-            print("\(result)")
+            print("\(result.description())")
         }
         
-        print("\(String(describing: engine))")
+        print("\(engine.description())")
     }
 }
