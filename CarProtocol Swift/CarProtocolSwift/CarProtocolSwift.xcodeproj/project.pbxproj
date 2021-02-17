@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA1E032F25DCAEA100EE110A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E032E25DCAEA100EE110A /* main.swift */; };
+		EA1E033A25DCAEDD00EE110A /* Tire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E033925DCAEDD00EE110A /* Tire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		EA1E032B25DCAEA100EE110A /* CarProtocolSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CarProtocolSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1E032E25DCAEA100EE110A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EA1E033925DCAEDD00EE110A /* Tire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,34 @@
 		EA1E032D25DCAEA100EE110A /* CarProtocolSwift */ = {
 			isa = PBXGroup;
 			children = (
+				EA1E033825DCAEC300EE110A /* Tire */,
+				EA1E033725DCAEBE00EE110A /* Engine */,
+				EA1E033625DCAEBA00EE110A /* Car */,
 				EA1E032E25DCAEA100EE110A /* main.swift */,
 			);
 			path = CarProtocolSwift;
+			sourceTree = "<group>";
+		};
+		EA1E033625DCAEBA00EE110A /* Car */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		EA1E033725DCAEBE00EE110A /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		EA1E033825DCAEC300EE110A /* Tire */ = {
+			isa = PBXGroup;
+			children = (
+				EA1E033925DCAEDD00EE110A /* Tire.swift */,
+			);
+			path = Tire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA1E032F25DCAEA100EE110A /* main.swift in Sources */,
+				EA1E033A25DCAEDD00EE110A /* Tire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
