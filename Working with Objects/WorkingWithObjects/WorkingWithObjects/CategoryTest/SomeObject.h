@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SomeObject : NSObject
 
+- (void) someMethod;
+
 @end
 
 NS_ASSUME_NONNULL_END

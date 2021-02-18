@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import "XYZPerson.h"
+#import "XYZShoutingPerson.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

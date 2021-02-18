@@ -6,8 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "XYZPerson.h"
-#import "XYZShoutingPerson.h"
+//#import "XYZPerson.h"
+//#import "XYZShoutingPerson.h"
+#import "SomeObject.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -40,22 +41,22 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"%@", firstName);
         
         // MARK: - Dot Syntax
-        XYZPerson * somePerson;
-        somePerson = [[XYZPerson alloc] initWithFirstName: @"kihyun" lastName: @"Kim" dateOfBirth: nil];
-        
+//        XYZPerson * somePerson;
+//        somePerson = [[XYZPerson alloc] initWithFirstName: @"kihyun" lastName: @"Kim" dateOfBirth: nil];
+//
 //        somePerson.firstName = @"johnny";
-        NSString * firstName = somePerson.firstName;
-        NSString * lastName = somePerson.lastName;
-        NSString * fullName = somePerson.fullName;
+//        NSString * firstName = somePerson.firstName;
+//        NSString * lastName = somePerson.lastName;
+//        NSString * fullName = somePerson.fullName;
+//
+//        NSLog(@"firstName: %@", firstName);
+//        NSLog(@"lastName: %@", lastName);
+//        NSLog(@"fullName: %@", fullName);
         
-        NSLog(@"firstName: %@", firstName);
-        NSLog(@"lastName: %@", lastName);
-        NSLog(@"fullName: %@", fullName);
-        
-        XYZShoutingPerson * someShoutingPerson;
-        someShoutingPerson = [[XYZShoutingPerson alloc] init];
-        
-        [someShoutingPerson someMethod];
+//        XYZShoutingPerson * someShoutingPerson;
+//        someShoutingPerson = [[XYZShoutingPerson alloc] init];
+//
+//        [someShoutingPerson someMethod];
         
         // MARK: - define weak variable example
         // NSObject * __weak someObject = [[NSObject alloc] init];
@@ -73,6 +74,12 @@ int main(int argc, const char * argv[]) {
         // variable: __weak, property: (weak)
         // variable: __autoreleasing, property: (autoreleasing)
         
+        
+        
+        // MARK: - Category Test
+        
+        SomeObject *someObject = [[SomeObject alloc] init];
+        [someObject someMethod];
         
     }
     return 0;
