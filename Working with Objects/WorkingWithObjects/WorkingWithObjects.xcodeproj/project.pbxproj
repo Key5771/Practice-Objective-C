@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA044CB825DE594C00C5DADB /* XYZPerson+XYZPersonNameDisplayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EA044CB725DE594C00C5DADB /* XYZPerson+XYZPersonNameDisplayAdditions.m */; };
 		EA14FE2425DA0A8800E8C49C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA14FE2325DA0A8800E8C49C /* main.m */; };
 		EA14FE2D25DA0AB000E8C49C /* XYZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = EA14FE2C25DA0AB000E8C49C /* XYZPerson.m */; };
 		EA14FE3325DA11D200E8C49C /* XYZShoutingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = EA14FE3225DA11D200E8C49C /* XYZShoutingPerson.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA044CB625DE594C00C5DADB /* XYZPerson+XYZPersonNameDisplayAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XYZPerson+XYZPersonNameDisplayAdditions.h"; sourceTree = "<group>"; };
+		EA044CB725DE594C00C5DADB /* XYZPerson+XYZPersonNameDisplayAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XYZPerson+XYZPersonNameDisplayAdditions.m"; sourceTree = "<group>"; };
 		EA14FE2025DA0A8800E8C49C /* WorkingWithObjects */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WorkingWithObjects; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA14FE2325DA0A8800E8C49C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA14FE2B25DA0AA300E8C49C /* XYZPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZPerson.h; sourceTree = "<group>"; };
@@ -44,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA044CAF25DE58DE00C5DADB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EA044CB625DE594C00C5DADB /* XYZPerson+XYZPersonNameDisplayAdditions.h */,
+				EA044CB725DE594C00C5DADB /* XYZPerson+XYZPersonNameDisplayAdditions.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		EA14FE1725DA0A8800E8C49C = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +75,7 @@
 		EA14FE2225DA0A8800E8C49C /* WorkingWithObjects */ = {
 			isa = PBXGroup;
 			children = (
+				EA044CAF25DE58DE00C5DADB /* Category */,
 				EA14FE2325DA0A8800E8C49C /* main.m */,
 				EA14FE2B25DA0AA300E8C49C /* XYZPerson.h */,
 				EA14FE2C25DA0AB000E8C49C /* XYZPerson.m */,
@@ -129,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA14FE2D25DA0AB000E8C49C /* XYZPerson.m in Sources */,
+				EA044CB825DE594C00C5DADB /* XYZPerson+XYZPersonNameDisplayAdditions.m in Sources */,
 				EA14FE3325DA11D200E8C49C /* XYZShoutingPerson.m in Sources */,
 				EA14FE2425DA0A8800E8C49C /* main.m in Sources */,
 			);
