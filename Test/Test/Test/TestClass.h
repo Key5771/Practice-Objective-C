@@ -11,7 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestClass : NSObject
 
+@property NSString * interfaceString;
 
+- (void) someMethod;
 @end
 
 NS_ASSUME_NONNULL_END

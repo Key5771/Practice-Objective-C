@@ -6,11 +6,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TestClass.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        TestClass * test = [[TestClass alloc] init];
+        test.someMethod;
+        
+        test.interfaceString = @"Change";
+        NSLog(@"interfaceString: %@", test.interfaceString);
     }
     return 0;
 }
