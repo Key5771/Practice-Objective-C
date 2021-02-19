@@ -32,18 +32,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlC-jx-Dzn">
-                                <rect key="frame" x="170.5" y="437.5" width="73" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TxM-0g-1mb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="119" id="AHD-Xx-E7E" customClass="ListTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="119"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AHD-Xx-E7E" id="ugm-1c-pPP">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="UlC-jx-Dzn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aCp-HZ-4VB"/>
-                            <constraint firstItem="UlC-jx-Dzn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i2i-Dv-EtT"/>
+                            <constraint firstItem="TxM-0g-1mb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GtT-YO-WAp"/>
+                            <constraint firstItem="TxM-0g-1mb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MAv-Sp-gef"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TxM-0g-1mb" secondAttribute="trailing" id="TOn-7f-pY0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TxM-0g-1mb" secondAttribute="bottom" id="yhU-z7-Uo6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ksw-qM-CEC">
@@ -55,12 +65,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addItem" destination="OcB-JQ-blD" id="r9Q-fx-hJQ"/>
-                        <outlet property="testLabel" destination="UlC-jx-Dzn" id="mbd-SV-YLe"/>
+                        <outlet property="myTableView" destination="TxM-0g-1mb" id="2EV-8Z-WsT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="119"/>
+            <point key="canvasLocation" x="115.94202898550725" y="118.52678571428571"/>
         </scene>
     </scenes>
     <resources>
