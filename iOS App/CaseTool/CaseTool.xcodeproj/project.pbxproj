@@ -21,6 +21,8 @@
 		EA8A1E1C25DF669D007D82A0 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8A1E1A25DF669D007D82A0 /* SecondViewController.xib */; };
 		EA8A1E2425DF7226007D82A0 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8A1E2325DF7226007D82A0 /* ListTableViewCell.m */; };
 		EA8A1E3125DF7A95007D82A0 /* PassDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A1E3025DF7A95007D82A0 /* PassDataDelegate.swift */; };
+		EA8A1E4525DF8871007D82A0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8A1E4425DF8871007D82A0 /* WebKit.framework */; };
+		EA8A1E4E25DF89F5007D82A0 /* AppleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8A1E4D25DF89F5007D82A0 /* AppleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,9 @@
 		EA8A1E2225DF7226007D82A0 /* ListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
 		EA8A1E2325DF7226007D82A0 /* ListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
 		EA8A1E3025DF7A95007D82A0 /* PassDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataDelegate.swift; sourceTree = "<group>"; };
+		EA8A1E4425DF8871007D82A0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		EA8A1E4C25DF89F5007D82A0 /* AppleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleViewController.h; sourceTree = "<group>"; };
+		EA8A1E4D25DF89F5007D82A0 /* AppleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8A1E4525DF8871007D82A0 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +106,7 @@
 				EA8A1DFB25DF650C007D82A0 /* CaseToolTests */,
 				EA8A1E0625DF650C007D82A0 /* CaseToolUITests */,
 				EA8A1DDB25DF650A007D82A0 /* Products */,
+				EA8A1E4325DF8871007D82A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,11 +161,11 @@
 		EA8A1E2025DF71E8007D82A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EA8A1E2125DF7208007D82A0 /* Cell */,
 				EA8A1DE325DF650B007D82A0 /* ViewController.h */,
 				EA8A1DE425DF650B007D82A0 /* ViewController.m */,
-				EA8A1E1925DF669D007D82A0 /* SecondViewController.swift */,
-				EA8A1E1A25DF669D007D82A0 /* SecondViewController.xib */,
+				EA8A1E3825DF877E007D82A0 /* Home */,
+				EA8A1E3925DF879D007D82A0 /* AppleView */,
+				EA8A1E2125DF7208007D82A0 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +185,32 @@
 				EA8A1E3025DF7A95007D82A0 /* PassDataDelegate.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EA8A1E3825DF877E007D82A0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A1E1925DF669D007D82A0 /* SecondViewController.swift */,
+				EA8A1E1A25DF669D007D82A0 /* SecondViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EA8A1E3925DF879D007D82A0 /* AppleView */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A1E4C25DF89F5007D82A0 /* AppleViewController.h */,
+				EA8A1E4D25DF89F5007D82A0 /* AppleViewController.m */,
+			);
+			path = AppleView;
+			sourceTree = "<group>";
+		};
+		EA8A1E4325DF8871007D82A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A1E4425DF8871007D82A0 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +349,7 @@
 				EA8A1E3125DF7A95007D82A0 /* PassDataDelegate.swift in Sources */,
 				EA8A1DE525DF650B007D82A0 /* ViewController.m in Sources */,
 				EA8A1DDF25DF650A007D82A0 /* AppDelegate.m in Sources */,
+				EA8A1E4E25DF89F5007D82A0 /* AppleViewController.m in Sources */,
 				EA8A1E2425DF7226007D82A0 /* ListTableViewCell.m in Sources */,
 				EA8A1DE225DF650A007D82A0 /* SceneDelegate.m in Sources */,
 				EA8A1DEB25DF650B007D82A0 /* CaseTool.xcdatamodeld in Sources */,

@@ -11,7 +11,6 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var inputTextField: UITextField!
     
     @objc var passData: String?
-    
     @objc weak var delegate: PassDataDelegate?
     
     override func viewDidLoad() {

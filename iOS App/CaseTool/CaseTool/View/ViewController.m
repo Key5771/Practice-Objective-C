@@ -48,10 +48,7 @@
     
     cell.textLabel.text = [_array objectAtIndex:indexPath.row];
     
-//    cell.testLabel.text = [_array objectAtIndex:indexPath.row];
-    
     return cell;
-//    let cell = dequeueReusableCell(
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -59,7 +56,7 @@
 }
 
 #pragma mark - PassDataDelegate
-- (void) passDataWithStr:(NSString *) str {
+- (void)passDataWithStr:(NSString *)str {
     [_array addObject:str];
     
     [self.myTableView reloadData];
