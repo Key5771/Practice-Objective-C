@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "CaseTool-Swift.h"
 
 @interface ViewController ()
 
@@ -15,8 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.testLabel.text = @"Objective-C";
 }
 
+- (IBAction)addViewController:(id)sender {
+    SecondViewController *vc = [[SecondViewController alloc] init];
+    vc.passData = @"Hello Swift";
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end
