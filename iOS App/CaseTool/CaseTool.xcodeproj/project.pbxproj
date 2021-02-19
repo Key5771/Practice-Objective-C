@@ -20,6 +20,7 @@
 		EA8A1E1B25DF669D007D82A0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A1E1925DF669D007D82A0 /* SecondViewController.swift */; };
 		EA8A1E1C25DF669D007D82A0 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA8A1E1A25DF669D007D82A0 /* SecondViewController.xib */; };
 		EA8A1E2425DF7226007D82A0 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8A1E2325DF7226007D82A0 /* ListTableViewCell.m */; };
+		EA8A1E3125DF7A95007D82A0 /* PassDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A1E3025DF7A95007D82A0 /* PassDataDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		EA8A1E1A25DF669D007D82A0 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		EA8A1E2225DF7226007D82A0 /* ListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
 		EA8A1E2325DF7226007D82A0 /* ListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+		EA8A1E3025DF7A95007D82A0 /* PassDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				EA8A1DF225DF650C007D82A0 /* main.m */,
 				EA8A1DE925DF650B007D82A0 /* CaseTool.xcdatamodeld */,
 				EA8A1E1825DF669D007D82A0 /* CaseTool-Bridging-Header.h */,
+				EA8A1E2F25DF7A84007D82A0 /* Protocol */,
 				EA8A1E2025DF71E8007D82A0 /* View */,
 			);
 			path = CaseTool;
@@ -167,6 +170,14 @@
 				EA8A1E2325DF7226007D82A0 /* ListTableViewCell.m */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		EA8A1E2F25DF7A84007D82A0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A1E3025DF7A95007D82A0 /* PassDataDelegate.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +313,7 @@
 			files = (
 				EA8A1E1B25DF669D007D82A0 /* SecondViewController.swift in Sources */,
 				EA8A1DF325DF650C007D82A0 /* main.m in Sources */,
+				EA8A1E3125DF7A95007D82A0 /* PassDataDelegate.swift in Sources */,
 				EA8A1DE525DF650B007D82A0 /* ViewController.m in Sources */,
 				EA8A1DDF25DF650A007D82A0 /* AppDelegate.m in Sources */,
 				EA8A1E2425DF7226007D82A0 /* ListTableViewCell.m in Sources */,

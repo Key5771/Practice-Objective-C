@@ -6,8 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CaseTool-Swift.h"
 
-@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, PassDataDelegate>
 
 #pragma mark - BarButtonItem
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addItem;

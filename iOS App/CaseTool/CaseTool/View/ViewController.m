@@ -8,11 +8,9 @@
 #import "ViewController.h"
 #import "ListTableViewCell.h"
 
-#import "CaseTool-Swift.h"
-
 @interface ViewController ()
 
-@property (nonatomic) NSArray *array;
+@property (nonatomic) NSMutableArray *array;
 
 @end
 
@@ -21,19 +19,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _array = [NSArray arrayWithObjects: @"Apple", @"Banana", @"Car", @"Dog", nil];
+    _array = [NSMutableArray arrayWithObjects: @"Apple", @"Banana", @"Car", @"Dog", nil];
     
     _myTableView.delegate = self;
     _myTableView.dataSource = self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"%@", _array);
+}
+
 - (IBAction)addViewController:(id)sender {
     SecondViewController *vc = [[SecondViewController alloc] init];
     vc.passData = @"Hello Swift";
+    vc.delegate = self;
     
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+#pragma mark - UITableViewDataSource
 - (UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     static NSString *identifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
@@ -52,6 +56,13 @@
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _array.count;
+}
+
+#pragma mark - PassDataDelegate
+- (void) passDataWithStr:(NSString *) str {
+    [_array addObject:str];
+    
+    [self.myTableView reloadData];
 }
 
 @end
