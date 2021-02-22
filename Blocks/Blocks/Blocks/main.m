@@ -16,6 +16,15 @@ int main(int argc, const char * argv[]) {
         };
         
         simpleBlock();
+        
+        double (^multiplyTwoValue)(double, double) = ^ (double firstValue, double secondValue) {
+            return firstValue * secondValue;
+        };
+        
+        double x = 2;
+        double y = 5;
+        
+        NSLog(@"%f X %f = %f", x, y, multiplyTwoValue(x, y));
     }
     return 0;
 }
