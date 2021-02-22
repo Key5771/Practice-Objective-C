@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "BlockTest.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         void (^simpleBlock)(void);
@@ -25,6 +27,10 @@ int main(int argc, const char * argv[]) {
         double y = 5;
         
         NSLog(@"%f X %f = %f", x, y, multiplyTwoValue(x, y));
+        
+        
+        BlockTest *blockTest = [[BlockTest alloc] init];
+        [blockTest blockTest];
     }
     return 0;
 }
