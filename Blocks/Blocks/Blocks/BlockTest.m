@@ -16,6 +16,20 @@
         NSLog(@"Integer is: %i", anInteger);
     };
     
+    anInteger = 84;
+    
+    testBlock();
+}
+
+- (void)blockTest2 {
+    __block int anInteger = 42;
+    
+    void (^testBlock)(void) = ^ {
+        NSLog(@"Integer is: %i", anInteger);
+    };
+    
+    anInteger = 84;
+    
     testBlock();
 }
 

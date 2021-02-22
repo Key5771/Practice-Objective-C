@@ -29,8 +29,12 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%f X %f = %f", x, y, multiplyTwoValue(x, y));
         
         
+        NSLog(@"=========================================================================");
+        NSLog(@"Integer is changed 42 to 84");
+        
         BlockTest *blockTest = [[BlockTest alloc] init];
         [blockTest blockTest];
+        [blockTest blockTest2]; // __block
     }
     return 0;
 }

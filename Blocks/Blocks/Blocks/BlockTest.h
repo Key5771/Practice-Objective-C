@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BlockTest : NSObject
 
 - (void) blockTest;
+- (void) blockTest2;
 
 @end
 
