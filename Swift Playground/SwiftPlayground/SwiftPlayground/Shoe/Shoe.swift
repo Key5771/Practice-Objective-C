@@ -20,6 +20,7 @@ class Shoe: CustomStringConvertible {
     }
     
     var description: String {
-        return "Shoe(color: \(color), size: \(size), hasLaces: \(hasLaces))"
+        let doesOrDoesNot = hasLaces ? "does" : "does not"
+        return "This shoe is \(color), size \(size), and \(doesOrDoesNot) have laces"
     }
 }
