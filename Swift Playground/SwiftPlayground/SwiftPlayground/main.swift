@@ -7,5 +7,8 @@
 
 import Foundation
 
-print("Hello, World!")
+let myShoe = Shoe(color: "Black", size: 12, hasLaces: true)
+let yourShoe = Shoe(color: "Red", size: 8, hasLaces: false)
 
+print(myShoe)
+print(yourShoe)

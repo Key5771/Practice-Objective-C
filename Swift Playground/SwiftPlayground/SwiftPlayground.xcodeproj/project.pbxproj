@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EAE3123425E4A1E1007A1384 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3123325E4A1E1007A1384 /* main.swift */; };
+		EAE3123E25E4A226007A1384 /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3123D25E4A226007A1384 /* Shoe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		EAE3123025E4A1E1007A1384 /* SwiftPlayground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftPlayground; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE3123325E4A1E1007A1384 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EAE3123D25E4A226007A1384 /* Shoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,18 @@
 		EAE3123225E4A1E1007A1384 /* SwiftPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				EAE3123C25E4A214007A1384 /* Shoe */,
 				EAE3123325E4A1E1007A1384 /* main.swift */,
 			);
 			path = SwiftPlayground;
+			sourceTree = "<group>";
+		};
+		EAE3123C25E4A214007A1384 /* Shoe */ = {
+			isa = PBXGroup;
+			children = (
+				EAE3123D25E4A226007A1384 /* Shoe.swift */,
+			);
+			path = Shoe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE3123E25E4A226007A1384 /* Shoe.swift in Sources */,
 				EAE3123425E4A1E1007A1384 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
