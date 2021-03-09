@@ -39,6 +39,7 @@ struct Stack<Element>: Container {
     subscript(i: Int) -> Element { return items[i] }
 }
 
+// MARK: - extension
 extension Array: Container {}
 
 extension Stack: SuffixableContainer {
@@ -50,5 +51,12 @@ extension Stack: SuffixableContainer {
         }
         
         return result
+    }
+}
+
+extension Stack where Element: Equatable {
+    func isTop(_ item: Element) -> Bool {
+        guard let topItem = items.last else { return false }
+        return topItem == item
     }
 }

@@ -39,3 +39,9 @@ if allItemsMatch(stackOfStrings, arrayOfStrings) {
 } else {
     print("Not all items match")
 }
+
+if stackOfStrings.isTop("tres") {
+    print("Top element is here")
+} else {
+    print("Top element is something else")
+}
