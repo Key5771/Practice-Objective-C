@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA7068EE25F7672A001FBD7F /* GenericTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7068ED25F7672A001FBD7F /* GenericTest.swift */; };
 		EAE3123425E4A1E1007A1384 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3123325E4A1E1007A1384 /* main.swift */; };
 		EAE3123E25E4A226007A1384 /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3123D25E4A226007A1384 /* Shoe.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA7068ED25F7672A001FBD7F /* GenericTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTest.swift; sourceTree = "<group>"; };
 		EAE3123025E4A1E1007A1384 /* SwiftPlayground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftPlayground; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE3123325E4A1E1007A1384 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EAE3123D25E4A226007A1384 /* Shoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA7068EC25F7670E001FBD7F /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				EA7068ED25F7672A001FBD7F /* GenericTest.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
 		EAE3122725E4A1E0007A1384 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		EAE3123225E4A1E1007A1384 /* SwiftPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				EA7068EC25F7670E001FBD7F /* Generic */,
 				EAE3123C25E4A214007A1384 /* Shoe */,
 				EAE3123325E4A1E1007A1384 /* main.swift */,
 			);
@@ -130,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7068EE25F7672A001FBD7F /* GenericTest.swift in Sources */,
 				EAE3123E25E4A226007A1384 /* Shoe.swift in Sources */,
 				EAE3123425E4A1E1007A1384 /* main.swift in Sources */,
 			);
