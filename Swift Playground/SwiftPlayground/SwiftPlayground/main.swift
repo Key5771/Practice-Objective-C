@@ -119,3 +119,18 @@ kingSlayer.address.streetAddress = "1 King Way Apt. 1"
 
 print("madKing: \(madKing.address.streetAddress)")
 print("kingSlayer: \(kingSlayer.address.streetAddress)")
+
+
+print("============================================")
+
+let billPlayer = King(name: "Robert", address: kingsLanding)
+
+let bill = Bill(amount: 42.99, billedTo: billPlayer)
+let bill2 = bill
+
+billPlayer.name = "Bob"
+
+print("bill.billedTo.name: \(bill.billedTo.name)")
+print("bill2.billedTo.name: \(bill2.billedTo.name)")
+
+print("============================================")
