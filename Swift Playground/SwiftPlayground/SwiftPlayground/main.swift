@@ -13,35 +13,60 @@ import Foundation
 //print(myShoe)
 //print(yourShoe)
 
-func allItemsMatch<C1: Container, C2: Container>(_ someContainer: C1, _ anotherContainer: C2) -> Bool where C1.Item == C2.Item, C1.Item: Equatable {
-    if someContainer.count != anotherContainer.count {
-        return false
-    }
-    
-    for i in 0..<someContainer.count {
-        if someContainer[i] != anotherContainer[i] {
-            return false
-        }
-    }
-    
-    return true
-}
 
-var stackOfStrings = Stack<String>()
-stackOfStrings.push("uno")
-stackOfStrings.push("dos")
-stackOfStrings.push("tres")
+// MARK: - GenericTest
+//func allItemsMatch<C1: Container, C2: Container>(_ someContainer: C1, _ anotherContainer: C2) -> Bool where C1.Item == C2.Item, C1.Item: Equatable {
+//    if someContainer.count != anotherContainer.count {
+//        return false
+//    }
+//
+//    for i in 0..<someContainer.count {
+//        if someContainer[i] != anotherContainer[i] {
+//            return false
+//        }
+//    }
+//
+//    return true
+//}
+//
+//var stackOfStrings = Stack<String>()
+//stackOfStrings.push("uno")
+//stackOfStrings.push("dos")
+//stackOfStrings.push("tres")
+//
+//var arrayOfStrings = ["uno", "dos", "tres"]
+//
+//if allItemsMatch(stackOfStrings, arrayOfStrings) {
+//    print("All items match")
+//} else {
+//    print("Not all items match")
+//}
+//
+//if stackOfStrings.isTop("tres") {
+//    print("Top element is here")
+//} else {
+//    print("Top element is something else")
+//}
 
-var arrayOfStrings = ["uno", "dos", "tres"]
 
-if allItemsMatch(stackOfStrings, arrayOfStrings) {
-    print("All items match")
-} else {
-    print("Not all items match")
-}
+// MARK: - Reference Type VS Value Type
 
-if stackOfStrings.isTop("tres") {
-    print("Top element is here")
-} else {
-    print("Top element is something else")
-}
+// Class(Reference)
+let dog = Dog()
+let puppy = dog
+
+puppy.wasFed = true
+
+print("dog.wasFed : \(dog.wasFed)")
+print("puppy.wasFed : \(puppy.wasFed)")
+
+print("============================================")
+
+// Struct(Value)
+var cat = Cat()
+var kitty = cat
+
+kitty.wasFed = true
+
+print("cat.wasFed : \(cat.wasFed)")
+print("kitty.wasFed : \(kitty.wasFed)")
