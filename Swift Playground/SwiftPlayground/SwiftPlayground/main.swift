@@ -51,7 +51,7 @@ import Foundation
 
 // MARK: - Reference Type VS Value Type
 
-// Class(Reference)
+// Class(Dog)
 let dog = Dog()
 let puppy = dog
 
@@ -62,7 +62,7 @@ print("puppy.wasFed : \(puppy.wasFed)")
 
 print("============================================")
 
-// Struct(Value)
+// Struct(Cat)
 var cat = Cat()
 var kitty = cat
 
@@ -70,3 +70,31 @@ kitty.wasFed = true
 
 print("cat.wasFed : \(cat.wasFed)")
 print("kitty.wasFed : \(kitty.wasFed)")
+
+print("============================================")
+
+// Struct(Point)
+let point1 = Point(x: 2, y: 3)
+let point2 = Point(x: 2, y: 3)
+
+if point1 == point2 {
+    print("Equal")
+} else {
+    print("Not Equal")
+}
+
+print("============================================")
+
+// Struct(Shape)
+let initialPoint = Point(x: 0, y: 0)
+let circle = Shape(center: initialPoint)
+var square = Shape(center: initialPoint)
+
+square.center.x = 5
+
+print("circle: \(circle.center)")
+print("square: \(square.center)")
+
+print("============================================")
+
+
