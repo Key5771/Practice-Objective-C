@@ -15,6 +15,7 @@
 		EA70690125F88EAE001FBD7F /* ARCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70690025F88EAE001FBD7F /* ARCTest.swift */; };
 		EA70690925F896BF001FBD7F /* WeakReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70690825F896BF001FBD7F /* WeakReference.swift */; };
 		EA70690D25F89D90001FBD7F /* UnownedReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70690C25F89D90001FBD7F /* UnownedReference.swift */; };
+		EA70691125F8A83F001FBD7F /* UnownedOptionalReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70691025F8A83F001FBD7F /* UnownedOptionalReference.swift */; };
 		EAE3123425E4A1E1007A1384 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3123325E4A1E1007A1384 /* main.swift */; };
 		EAE3123E25E4A226007A1384 /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE3123D25E4A226007A1384 /* Shoe.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		EA70690025F88EAE001FBD7F /* ARCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCTest.swift; sourceTree = "<group>"; };
 		EA70690825F896BF001FBD7F /* WeakReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakReference.swift; sourceTree = "<group>"; };
 		EA70690C25F89D90001FBD7F /* UnownedReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnownedReference.swift; sourceTree = "<group>"; };
+		EA70691025F8A83F001FBD7F /* UnownedOptionalReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnownedOptionalReference.swift; sourceTree = "<group>"; };
 		EAE3123025E4A1E1007A1384 /* SwiftPlayground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftPlayground; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE3123325E4A1E1007A1384 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		EAE3123D25E4A226007A1384 /* Shoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		EA70690525F89699001FBD7F /* WeakAndUnowned */ = {
 			isa = PBXGroup;
 			children = (
+				EA70690F25F8A829001FBD7F /* UnownedOptionalReference */,
 				EA70690625F896A7001FBD7F /* WeakReference */,
 				EA70690725F896B0001FBD7F /* UnownedReference */,
 			);
@@ -106,6 +109,14 @@
 				EA70690C25F89D90001FBD7F /* UnownedReference.swift */,
 			);
 			path = UnownedReference;
+			sourceTree = "<group>";
+		};
+		EA70690F25F8A829001FBD7F /* UnownedOptionalReference */ = {
+			isa = PBXGroup;
+			children = (
+				EA70691025F8A83F001FBD7F /* UnownedOptionalReference.swift */,
+			);
+			path = UnownedOptionalReference;
 			sourceTree = "<group>";
 		};
 		EAE3122725E4A1E0007A1384 = {
@@ -203,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7068F725F855E7001FBD7F /* Value Type.swift in Sources */,
+				EA70691125F8A83F001FBD7F /* UnownedOptionalReference.swift in Sources */,
 				EA7068EE25F7672A001FBD7F /* GenericTest.swift in Sources */,
 				EA70690D25F89D90001FBD7F /* UnownedReference.swift in Sources */,
 				EA7068FA25F86741001FBD7F /* ReferenceTypeWithValueType.swift in Sources */,

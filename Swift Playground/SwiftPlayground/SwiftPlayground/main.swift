@@ -160,11 +160,27 @@ import Foundation
 //me = nil
 //unit4A = nil
 
+//print("============================================")
+
+//var key: Customer?
+//
+//key = Customer(name: "key")
+//key!.card = CreditCard(number: 1234_5678_9012_3456, customer: key!)
+//
+//key = nil
+
 print("============================================")
 
-var key: Customer?
+let department = Department(name: "Horticulture")
 
-key = Customer(name: "key")
-key!.card = CreditCard(number: 1234_5678_9012_3456, customer: key!)
+let intro = Course(name: "Survey of Plants", in: department)
+let intermediate = Course(name: "Growing Common Herbs", in: department)
+let advanced = Course(name: "Caring for Tropical Plants", in: department)
 
-key = nil
+intro.nextCourse = intermediate
+intermediate.nextCourse = advanced
+department.courses = [intro, intermediate, advanced]
+
+guard let next = intro.nextCourse?.name, let next2 = intermediate.nextCourse?.name else { fatalError() }
+print("intro next: \(next)")
+print("intermediate next: \(next2)")
