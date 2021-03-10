@@ -109,3 +109,13 @@ print("person1: \(person1.account.balance)")
 print("person2: \(person2.account.balance)")
 
 print("============================================")
+
+// Class & Struct(Address Struct in Person Class)
+let kingsLanding = Address(streetAddress: "1 King Way", city: "Kings Landing", state: "Westeros", postalCode: "12345")
+let madKing = King(name: "Aerys", address: kingsLanding)
+let kingSlayer = King(name: "Jaime", address: kingsLanding)
+
+kingSlayer.address.streetAddress = "1 King Way Apt. 1"
+
+print("madKing: \(madKing.address.streetAddress)")
+print("kingSlayer: \(kingSlayer.address.streetAddress)")
