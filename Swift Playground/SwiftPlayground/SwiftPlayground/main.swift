@@ -138,7 +138,7 @@ import Foundation
 //print("bill.billedTo.name: \(bill.billedTo.name)")
 //print("bill2.billedTo.name: \(bill2.billedTo.name)")
 
-print("============================================")
+//print("============================================")
 
 //var papa: Family? = Family()
 //var mama: Family? = Family()
@@ -146,16 +146,25 @@ print("============================================")
 //mama = nil
 
 
+//print("============================================")
+
+//var me: MyPerson?
+//var unit4A: Apartment?
+//
+//me = MyPerson(name: "Key")
+//unit4A = Apartment(unit: "Prugio")
+//
+//me!.apartment = unit4A
+//unit4A!.tenant = me
+//
+//me = nil
+//unit4A = nil
+
 print("============================================")
 
-var me: MyPerson?
-var unit4A: Apartment?
+var key: Customer?
 
-me = MyPerson(name: "Key")
-unit4A = Apartment(unit: "Prugio")
+key = Customer(name: "key")
+key!.card = CreditCard(number: 1234_5678_9012_3456, customer: key!)
 
-me!.apartment = unit4A
-unit4A!.tenant = me
-
-me = nil
-unit4A = nil
+key = nil
