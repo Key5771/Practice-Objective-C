@@ -97,4 +97,15 @@ print("square: \(square.center)")
 
 print("============================================")
 
+// Class(Person & Account)
+let account = Account()
 
+let person1 = Person(account)
+let person2 = Person(account)
+
+person2.account.balance += 100
+
+print("person1: \(person1.account.balance)")
+print("person2: \(person2.account.balance)")
+
+print("============================================")
