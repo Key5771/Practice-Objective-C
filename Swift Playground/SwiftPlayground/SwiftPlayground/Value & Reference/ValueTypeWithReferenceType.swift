@@ -10,6 +10,11 @@ import Foundation
 struct Bill {
     let amount: Float
     let billedTo: King
+    
+    init(amount: Float, billedTo: King) {
+        self.amount = amount
+        self.billedTo = King(name: billedTo.name, address: billedTo.address)
+    }
 }
 
 

@@ -128,8 +128,13 @@ let billPlayer = King(name: "Robert", address: kingsLanding)
 let bill = Bill(amount: 42.99, billedTo: billPlayer)
 let bill2 = bill
 
-billPlayer.name = "Bob"
+print("before")
+print("bill.billedTo.name: \(bill.billedTo.name)")
+print("bill2.billedTo.name: \(bill2.billedTo.name)")
 
+bill.billedTo.name = "Bob"
+
+print("after")
 print("bill.billedTo.name: \(bill.billedTo.name)")
 print("bill2.billedTo.name: \(bill2.billedTo.name)")
 
