@@ -140,7 +140,22 @@ import Foundation
 
 print("============================================")
 
-var papa: Family? = Family()
-var mama: Family? = Family()
-papa = nil
-mama = nil
+//var papa: Family? = Family()
+//var mama: Family? = Family()
+//papa = nil
+//mama = nil
+
+
+print("============================================")
+
+var me: MyPerson?
+var unit4A: Apartment?
+
+me = MyPerson(name: "Key")
+unit4A = Apartment(unit: "Prugio")
+
+me!.apartment = unit4A
+unit4A!.tenant = me
+
+me = nil
+unit4A = nil
