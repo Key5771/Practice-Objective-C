@@ -199,15 +199,16 @@ func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
 var vendingMachine = VendingMachine()
 vendingMachine.coinsDeposited = 8
 
+func nourish(with item: String) throws {
+    do {
+        try vendingMachine.vend(itemNamed: item)
+    } catch {
+        print("Invalid selection, out of stock, or not enough money")
+    }
+}
+
 do {
-    try buyFavoriteSnack(person: "Alice", vendingMachine: vendingMachine)
-    print("Success!")
-} catch VendingMachineError.invalidSelection {
-    print("Invalid Selection")
-} catch VendingMachineError.outOfStock {
-    print("Out of Stock")
-} catch VendingMachineError.insufficientFunds(let coinsNeeded) {
-    print("Insufficient funds. Please insert an additional \(coinsNeeded) coins")
+    try nourish(with: "Beet-Flavored Chips")
 } catch {
-    print("Unexpected error: \(error)")
+    print("Unexpected non-vending-machine-related error: \(error)")
 }
