@@ -169,18 +169,45 @@ import Foundation
 //
 //key = nil
 
+//print("============================================")
+
+//let department = Department(name: "Horticulture")
+//
+//let intro = Course(name: "Survey of Plants", in: department)
+//let intermediate = Course(name: "Growing Common Herbs", in: department)
+//let advanced = Course(name: "Caring for Tropical Plants", in: department)
+//
+//intro.nextCourse = intermediate
+//intermediate.nextCourse = advanced
+//department.courses = [intro, intermediate, advanced]
+//
+//guard let next = intro.nextCourse?.name, let next2 = intermediate.nextCourse?.name else { fatalError() }
+//print("intro next: \(next)")
+//print("intermediate next: \(next2)")
+
+
+// MARK: - Error Handling
 print("============================================")
 
-let department = Department(name: "Horticulture")
+let favoriteSnacks = ["Alice": "Chips", "Bob": "Licorice", "Eve": "Pretzels"]
 
-let intro = Course(name: "Survey of Plants", in: department)
-let intermediate = Course(name: "Growing Common Herbs", in: department)
-let advanced = Course(name: "Caring for Tropical Plants", in: department)
+func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
+    let snackName = favoriteSnacks[person] ?? "Candy Bar"
+    try vendingMachine.vend(itemNamed: snackName)
+}
 
-intro.nextCourse = intermediate
-intermediate.nextCourse = advanced
-department.courses = [intro, intermediate, advanced]
+var vendingMachine = VendingMachine()
+vendingMachine.coinsDeposited = 8
 
-guard let next = intro.nextCourse?.name, let next2 = intermediate.nextCourse?.name else { fatalError() }
-print("intro next: \(next)")
-print("intermediate next: \(next2)")
+do {
+    try buyFavoriteSnack(person: "Alice", vendingMachine: vendingMachine)
+    print("Success!")
+} catch VendingMachineError.invalidSelection {
+    print("Invalid Selection")
+} catch VendingMachineError.outOfStock {
+    print("Out of Stock")
+} catch VendingMachineError.insufficientFunds(let coinsNeeded) {
+    print("Insufficient funds. Please insert an additional \(coinsNeeded) coins")
+} catch {
+    print("Unexpected error: \(error)")
+}
