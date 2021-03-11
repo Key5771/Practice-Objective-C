@@ -187,28 +187,35 @@ import Foundation
 
 
 // MARK: - Error Handling
-print("============================================")
+//print("============================================")
+//
+//let favoriteSnacks = ["Alice": "Chips", "Bob": "Licorice", "Eve": "Pretzels"]
+//
+//func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
+//    let snackName = favoriteSnacks[person] ?? "Candy Bar"
+//    try vendingMachine.vend(itemNamed: snackName)
+//}
+//
+//var vendingMachine = VendingMachine()
+//vendingMachine.coinsDeposited = 8
+//
+//func nourish(with item: String) throws {
+//    do {
+//        try vendingMachine.vend(itemNamed: item)
+//    } catch {
+//        print("Invalid selection, out of stock, or not enough money")
+//    }
+//}
+//
+//do {
+//    try nourish(with: "Beet-Flavored Chips")
+//} catch {
+//    print("Unexpected non-vending-machine-related error: \(error)")
+//}
 
-let favoriteSnacks = ["Alice": "Chips", "Bob": "Licorice", "Eve": "Pretzels"]
 
-func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
-    let snackName = favoriteSnacks[person] ?? "Candy Bar"
-    try vendingMachine.vend(itemNamed: snackName)
-}
-
-var vendingMachine = VendingMachine()
-vendingMachine.coinsDeposited = 8
-
-func nourish(with item: String) throws {
-    do {
-        try vendingMachine.vend(itemNamed: item)
-    } catch {
-        print("Invalid selection, out of stock, or not enough money")
-    }
-}
-
-do {
-    try nourish(with: "Beet-Flavored Chips")
-} catch {
-    print("Unexpected non-vending-machine-related error: \(error)")
-}
+// MARK: - Protocol
+let tracker = DiceGameTracker()
+let game = SnakeAndLadders()
+game.delegate = tracker
+game.play()
