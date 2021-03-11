@@ -215,7 +215,17 @@ import Foundation
 
 
 // MARK: - Protocol
-let tracker = DiceGameTracker()
-let game = SnakeAndLadders()
-game.delegate = tracker
-game.play()
+//let tracker = DiceGameTracker()
+//let game = SnakeAndLadders()
+//game.delegate = tracker
+//game.play()
+
+
+
+// MARK: - Access Control
+var stringToEdit = TrackedString()
+stringToEdit.value = "This string will be tracked."
+stringToEdit.value += " This edit will be increment numberOfEdits"
+stringToEdit.value += " So will this one"
+print("stringToEdit's value: \(stringToEdit.value)")
+print("The number of edits is \(stringToEdit.numberOfEdits)")
