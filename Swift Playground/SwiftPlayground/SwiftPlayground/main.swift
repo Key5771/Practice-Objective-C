@@ -229,3 +229,6 @@ stringToEdit.value += " This edit will be increment numberOfEdits"
 stringToEdit.value += " So will this one"
 print("stringToEdit's value: \(stringToEdit.value)")
 print("The number of edits is \(stringToEdit.numberOfEdits)")
+
+let test = Test(a: "Hello", b: "World")
+print("result: \(test.stringResult(test.a, test.b))")
